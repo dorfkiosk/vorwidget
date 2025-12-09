@@ -2,24 +2,40 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>VOR Abfahrten Potzneusiedl</title>
+  <title>Busabfahrten Potzneusiedl</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
+      background: white;
       font-family: Arial, sans-serif;
+    }
+
+    /* Damit das Widget maximal groß angezeigt wird */
+    #widget-container {
+      width: 100%;
+      height: 100%;
+      font-size: 34px;       /* Schriftgröße anpassen */
+      line-height: 1.2;       /* kompaktere Zeilen */
     }
   </style>
 </head>
+
 <body>
+  <!-- VOR Script laden -->
   <script type="text/javascript"
     src="https://anachb.vor.at/webapp/staticfiles/hafas-widget-core.1.0.0.js?L=vs_anachb&"></script>
 
-  <div data-hfs-widget="true"
+  <!-- Buswidget Container -->
+  <div id="widget-container"
+       data-hfs-widget="true"
        data-hfs-widget-sq="true"
        data-hfs-widget-sq-locationname="Potzneusiedl Untere Hauptstraße"
        data-hfs-widget-sq-location="A=1@O=Potzneusiedl Untere Hauptstraße@X=16949682@Y=48044485@U=81@L=410456700@p=1765272033@i=A×at:41:4567@">
   </div>
+
 </body>
 </html>
